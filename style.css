@@ -1,0 +1,305 @@
+* {
+    box-sizing: border-box;
+  }
+  
+
+  body {
+    font-family: 'Nunito Sans';
+    padding: 20px;
+    background: #f1f1f1;
+  }
+  
+
+  .header {
+    padding: 30px;
+    font-size: 30px;
+    background: #a7cfdf; /* Old browsers */
+    background: -moz-linear-gradient(top,  #a7cfdf 0%, #23538a 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #a7cfdf 0%,#23538a 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #a7cfdf 0%,#23538a 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a7cfdf', endColorstr='#23538a',GradientType=0 ); /* IE6-9 */
+    text-align: left;
+    color: white;
+    font-family: 'Montserrat';
+  }
+  
+
+  .leftcolumn {   
+    float: left;
+    width: 75%;
+    font-family: 'Nunito Sans';
+  }
+
+  .rightcolumn {
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+    font-family: 'Nunito Sans';
+  }
+  
+
+  .img {
+    width: 600px;
+    padding: 20px;
+    height:400px;
+  }
+
+  .lolimg {
+    width: 200px;
+    padding: 20px;
+    height:200px;
+  }
+  
+    .smallerimg {
+    width: 110%;
+    padding: 20px;
+    
+    }
+    .meimg {
+    width: 90%;
+    padding: 20px;
+    }
+  .card {
+     background-color: white;
+     padding: 20px;
+     margin-top: 20px;
+     font-family: 'Nunito Sans';
+  }
+
+  p {
+    font-family: 'Nunito Sans';
+    font-size: 14px;
+  }
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  
+ 
+  @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+      width: 100%;
+      padding: 0;
+    }
+  }
+
+  *
+{
+    outline: none;
+}
+
+html, body
+{
+    height: 100%;
+    min-height: 100%;
+}
+
+body
+{
+    margin: 0;
+    background-color: #007CC7;
+}
+
+.tb
+{
+    display: table;
+    width: 100%;
+}
+
+.td
+{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+input, button
+{
+    color: #fff;
+    font-family: 'Nunito Sans';
+    padding: 0;
+    margin: 0;
+    border: 0;
+    background-color: transparent;
+}
+
+#cover
+{
+    position: absolute;
+    top: 130px;
+    left: 0;
+    right: -750px;
+    width: 470px;
+    padding: 35px;
+    margin: -83px auto 0 auto;
+    background-color: #62D2FF;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px black, 0 0 0 20px #ffffffeb;
+    transform: scale(0.6);
+}
+
+form
+{
+    height: 96px;
+}
+
+input[type="text"]
+{
+    width: 100%;
+    height: 96px;
+    font-size: 60px;
+    line-height: 1;
+}
+
+input[type="text"]::placeholder
+{
+    color: white;
+}
+
+#s-cover
+{
+    width: 1px;
+    padding-left: 35px;
+}
+
+button
+{
+    position: relative;
+    display: block;
+    width: 84px;
+    height: 96px;
+    cursor: pointer;
+}
+
+#s-circle
+{
+    position: relative;
+    top: -8px;
+    left: 0;
+    width: 43px;
+    height: 43px;
+    margin-top: 0;
+    border-width: 15px;
+    border: 15px solid #fff;
+    background-color: transparent;
+    border-radius: 50%;
+    transition: 0.5s ease all;
+}
+
+button span
+{
+    position: absolute;
+    top: 68px;
+    left: 43px;
+    display: block;
+    width: 45px;
+    height: 15px;
+    background-color: transparent;
+    border-radius: 10px;
+    transform: rotateZ(52deg);
+    transition: 0.5s ease all;
+}
+
+button span:before, button span:after
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 45px;
+    height: 15px;
+    background-color: #fff;
+    border-radius: 10px;
+    transform: rotateZ(0);
+    transition: 0.5s ease all;
+}
+
+#s-cover:hover #s-circle
+{
+    top: -1px;
+    width: 67px;
+    height: 15px;
+    border-width: 0;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+#s-cover:hover span
+{
+    top: 50%;
+    left: 56px;
+    width: 25px;
+    margin-top: -9px;
+    transform: rotateZ(0);
+}
+
+#s-cover:hover button span:before
+{
+    bottom: 11px;
+    transform: rotateZ(52deg);
+}
+
+#s-cover:hover button span:after
+{
+    bottom: -11px;
+    transform: rotateZ(-52deg);
+}
+#s-cover:hover button span:before, #s-cover:hover button span:after
+{
+    right: -6px;
+    width: 40px;
+    background-color: #fff;
+}
+
+ul li {
+    float: left;
+    list-style: none;
+    margin-right: 1em; 
+    list-style: none;
+    margin: 1;
+   }
+
+   li {
+    display: inline-block;
+    
+   }
+   li a {
+    color: black;
+    text-decoration: none;
+    float: left;
+    font-size: 25px;
+    padding: 12px;
+    background-color: gray;
+    box-shadow: 0 10px 20px black, 0 0 0 10px #007CC7;
+    
+   }
+    
+   li a:hover {
+    color: white;
+   }
+   
+   .left a:hover {
+    /*Transition*/ 
+    -webkit-transition:All .5s ease;
+    -moz-transition:All .5s ease;
+    -o-transition:All .5s ease;
+ 
+    /*Transform*/ 
+    -webkit-transform: rotate(-10deg) scale(1.2);
+    -moz-transform: rotate(-10deg) scale(1.2);
+    -o-transform: rotate(-10deg) scale(1.2);
+   }
+    
+   .right a:hover {
+    /*Transition*/ 
+    -webkit-transition:All .5s ease;
+    -moz-transition:All .5s ease;
+    -o-transition:All .5s ease;
+ 
+    /*Transform*/ 
+    -webkit-transform: rotate(10deg) scale(1.2);
+    -moz-transform: rotate(10deg) scale(1.2);
+    -o-transform: rotate(10deg) scale(1.2);
+   }
